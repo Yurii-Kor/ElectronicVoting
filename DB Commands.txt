@@ -1,0 +1,18 @@
+DROP TABLE voters;
+DROP TABLE votes;
+
+CREATE TABLE voters (
+                         id VARCHAR2(255) PRIMARY KEY,
+                         center VARCHAR2(255) NOT NULL,
+                         name VARCHAR2(255) NOT NULL,
+                         password VARCHAR2(255) NOT NULL
+);
+
+CREATE TABLE votes (
+                         id VARCHAR2(255) PRIMARY KEY,
+                         center VARCHAR2(255) NOT NULL,
+                         choice VARCHAR2(255) NOT NULL
+);
+
+SELECT * FROM voters;
+SELECT * FROM votes;
